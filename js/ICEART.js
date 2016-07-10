@@ -315,5 +315,7 @@ $(function(){
 	div.click(function(){
 		list.append('<li style="background: url(img/bg1.jpg) '+(($(this).index()%6)*-100)+
 					'px '+(parseInt($(this).index()/6)*-100)+'px;"></li>')	
+			div.eq($(this).index()).addClass("div");
+			div.eq($(this).index()).unbind("click");
 	})
 })
